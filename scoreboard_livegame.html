@@ -27,7 +27,7 @@
 	font-weight: bold;	
 }
 .scoreboard_comp {
-	background-color: #a0a0a0;
+	background-color: #d0d0d0;
 	height: 300px;
 	color: #000;
 	width: 900px;
@@ -39,14 +39,14 @@
 }
 
 .scoreboard_inprogress {
-	background-color: #a0a0a0;
-	height: 25px;
+	background-color: #d0d0d0;
+	height: 20px;
 	color: #000;
 	width: 290px;
 	border-color: #FFF;
 	border-collapse: collapse;
 	font-family: Candara, Georgia, "Times New Roman", Times, serif;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 
@@ -56,15 +56,17 @@
 .scoreboard_comp tr .away_team div .teamscore2 {
 	width: 40px;
 	text-align: center;
-	text-shadow: #000;
+	text-shadow: #333;
 	font-size: 40px;
 	padding: 20px;
+	font-family: book antiqua;
 }
 .scoreboard_comp tr .home_team div .teamscore {
 	text-align: center;
 	text-shadow: #000;
 	font-size: 40px;
 	padding: 20px;
+	font-family: book antiqua, Arial;
 }
 body {
 	background-color: #FFF;
@@ -80,6 +82,7 @@ body {
 }
 .scoreboard_comp tr .game_stats div .starting_pitchers {
 	font-size:10px;
+	text-align:center;
 	width: 300px;
 	bottom: 0px;
 }
@@ -88,10 +91,12 @@ body {
 	font-size:10px;
 	width: 300px;
 	bottom: 0px;
+	font-weight: normal;
 }
 .scoreboard_comp tr span .game_stats div table tr .winningPitcher {
 	text-align: center;
 	width: 290px;
+	font-weight: normal;
 }
 
 .scoreboard_comp tr .game_stats div table tr .startingPitcher_home {
@@ -108,40 +113,46 @@ body {
 .scoreboard_comp tr .game_stats div .winningPitcher {
 	text-align: center;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 10px;
 }
 .scoreboard_comp tr .game_stats div .losingPitcher {
 	text-align: center;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 10px;
 }
 
 .winninglosing_Pitchers {
 }
 .scoreboard_comp tr td .game_stats .starting_pitchers table tr .startingPitcher_home {
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 10px;
+	text-align:center;
 }
 .scoreboard_inprogress {
 	text-align: center;
 }
 .scoreboard_comp tr td .game_stats .starting_pitchers table tr .startingPitcher_away {
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 12px;
 	padding: 10px;
+	text-align: center;
 }
 .scoreboard_comp tr td .away_team div table .team2Homeaway {
 	text-align: right;
 	font-weight: normal;
 }
+.scoreboard_comp tr td .game_stats .winninglosing_Pitchers table tr .currentPitcher {
+	font-weight: normal;
+}
+.scoreboard_comp tr td .game_stats .winninglosing_Pitchers table tr .currentBatter {
+	font-weight: normal;
+}
 </style>
 <div>
 <table width="900px" align="center">
-<h2> MLB Scoreboard Sample </h2>
-<h4> Diego Gile </h4>
+<h2 class="league"></h2>Scoreboard HTML5 Component<br>Diego M. Gile<br>diegogile@gmail.com
 
-<p class="League"></p>
 </table>
 </div>
 
@@ -160,7 +171,7 @@ body {
     <td class="teamscore">
     </td>
     <td width="200px">
-    <img src="diamondbacks.png" width="200" height="200" alt="miami">
+    <img src="image/diamondbacks.png" width="200" height="200" alt="miami">
     </td>
     </tr>
     </table>
@@ -196,10 +207,7 @@ body {
     <div>
     <table width=290px>
     <tr>
-    <p class="date"> </p>
-    </tr>
-    <tr>
-    <img src="espnlogo.png" width="48" height="35" alt="espnlogo">
+    <img src="image/espnlogo.png" width="48" height="35" alt="espnlogo">
     </tr>
     <tr>
     <p class="status"> </p>
@@ -210,11 +218,11 @@ body {
 	<div class="starting_pitchers">
     <table width=290px>
     <tr>
-    <td class="startingPitcher_home">
+    <td width="98" class="startingPitcher_home">
     </td>
-    <td width="35px" align="center">Starting Pitchers
+    <td width="60" align="center">Starting Pitchers
     </td>
-    <td class="startingPitcher_away">
+    <td width="98" class="startingPitcher_away">
     </td>
     </tr>
     </table>
@@ -231,8 +239,8 @@ body {
     </td>
     </tr>
     <tr>
-    <td><img src="athlete_stock.png" width="30" height="39" alt="athleteimg"></td>
-    <td><img src="athlete_stock.png" width="30" height="39" alt="athleteimg">
+    <td><img src="image/athlete_stock.png" width="30" height="39" alt="athleteimg"></td>
+    <td><img src="image/athlete_stock.png" width="30" height="39" alt="athleteimg">
     </td>
     
     <tr>
@@ -255,7 +263,7 @@ body {
     <table width="300px">
     <tr>
     <td width="200px">
-    <img src="rockies.png" width="200" height="200" alt="miami">
+    <img src="image/rockies.png" width="200" height="200" alt="miami">
     </td>
     <td class="teamscore2">
     </td>
