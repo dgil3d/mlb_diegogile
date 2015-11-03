@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-<title>JSON Sample</title>
+<title>MLB Scoreboard_Live - Diego Gile</title>
 
 <style type="text/css">
 
@@ -37,7 +37,6 @@
 	font-family: Candara, Georgia, "Times New Roman", Times, serif;
 	font-size: 16px;
 }
-
 .scoreboard_inprogress {
 	background-color: #d0d0d0;
 	height: 20px;
@@ -48,8 +47,6 @@
 	font-family: Candara, Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
 }
-
-
 .scoreboard_comp tr .away_team {
 	text-align: center;
 }
@@ -80,6 +77,10 @@ body {
 	text-align: left;
 	font-weight: normal;
 }
+.scoreboard_comp tr td .away_team div table .team2Homeaway {
+	text-align: right;
+	font-weight: normal;
+}
 .scoreboard_comp tr .game_stats div .starting_pitchers {
 	font-size:10px;
 	text-align:center;
@@ -106,9 +107,6 @@ body {
 .scoreboard_comp tr .game_stats div table tr .startingPitcher_away {
 	font-size: 14px;
 	text-align: right;
-}
-.scoreboard_comp tr .game_stats div .date {
-
 }
 .scoreboard_comp tr .game_stats div .winningPitcher {
 	text-align: center;
@@ -138,10 +136,6 @@ body {
 	padding: 10px;
 	text-align: center;
 }
-.scoreboard_comp tr td .away_team div table .team2Homeaway {
-	text-align: right;
-	font-weight: normal;
-}
 .scoreboard_comp tr td .game_stats .winninglosing_Pitchers table tr .currentPitcher {
 	font-weight: normal;
 }
@@ -149,16 +143,16 @@ body {
 	font-weight: normal;
 }
 </style>
+
 <div>
 <table width="900px" align="center">
 <h2 class="league"></h2>Scoreboard HTML5 Component<br>Diego M. Gile<br>diegogile@gmail.com
-
 </table>
 </div>
 
 </head>
-<body>
 
+<body>
 
 <table border="1" align="center" class="scoreboard_comp">
   <tr>
@@ -171,7 +165,7 @@ body {
     <td class="teamscore">
     </td>
     <td width="200px">
-    <img src="image/diamondbacks.png" width="200" height="200" alt="miami">
+    <img src="image/rockies.png" width="200" height="200" alt="miami">
     </td>
     </tr>
     </table>
@@ -185,7 +179,6 @@ body {
     </tr>
     <tr class="home_teamrecord">
     </tr>
-
     </table>
     </div>
     
@@ -242,7 +235,6 @@ body {
     <td><img src="image/athlete_stock.png" width="30" height="39" alt="athleteimg"></td>
     <td><img src="image/athlete_stock.png" width="30" height="39" alt="athleteimg">
     </td>
-    
     <tr>
     <td class="currentPitcher">
     </td>
@@ -251,19 +243,17 @@ body {
     </tr>
     </table>    
     </div>
-    
     </span>
     
 <!--master column-->
     <td>
     
-
     <span class="away_team">
     <div>
     <table width="300px">
     <tr>
     <td width="200px">
-    <img src="image/rockies.png" width="200" height="200" alt="miami">
+    <img src="image/diamondbacks.png" width="200" height="200" alt="miami">
     </td>
     <td class="teamscore2">
     </td>
@@ -279,7 +269,6 @@ body {
     </tr>
     <tr class="away_teamrecord">
     </tr>
-    
     </table>
     </div>
     
@@ -313,7 +302,6 @@ body {
     Outs
     </td>
     </tr>
-    
     <tr>
     <td class="balls">
     </td>
@@ -322,7 +310,6 @@ body {
     <td class="outs">
     </td>
     </tr>
-    
     </table>
 	</div>
 
@@ -333,10 +320,6 @@ body {
     </table>
     </div>
 	</span>
-
-
-
-
 
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
@@ -396,11 +379,8 @@ $(".strikes").append(data.sports[0].leagues[0].events[1].competitions[0].situati
 $(".outs").append(data.sports[0].leagues[0].events[1].competitions[0].situation.outs);
 
 $(".baseRunnersText").append(data.sports[0].leagues[0].events[1].competitions[0].situation.baseRunnersText);
-
-
-
 });
-    </script>
+</script>
 
 </body>
 

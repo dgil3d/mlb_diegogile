@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-<title>JSON Sample</title>
+<title>MLB Scoreboard - Diego Gile</title>
 
 <style type="text/css">
 
@@ -80,6 +80,10 @@ body {
 	text-align: left;
 	font-weight: normal;
 }
+.scoreboard_comp tr td .away_team div table .team2Homeaway {
+	text-align: right;
+	font-weight: normal;
+}
 .scoreboard_comp tr .game_stats div .starting_pitchers {
 	font-size:10px;
 	width: 300px;
@@ -95,7 +99,6 @@ body {
 	text-align: center;
 	width: 290px;
 }
-
 .scoreboard_comp tr .game_stats div table tr .startingPitcher_home {
 	font-size: 12px;
 	text-align: left;
@@ -117,7 +120,6 @@ body {
 	font-weight: normal;
 	font-size: 12px;
 }
-
 .winninglosing_Pitchers {
 }
 .scoreboard_comp tr td .game_stats .starting_pitchers table tr .startingPitcher_home {
@@ -135,11 +137,8 @@ body {
 	padding: 10px;
 	text-align: center;
 }
-.scoreboard_comp tr td .away_team div table .team2Homeaway {
-	text-align: right;
-	font-weight: normal;
-}
 </style>
+
 <div>
 <table width="900px" align="center">
 <h2 class="league"></h2>Scoreboard HTML5 Component<br>Diego M. Gile<br>diegogile@gmail.com
@@ -150,7 +149,6 @@ body {
 
 </head>
 <body>
-
 
 <table border="1" align="center" class="scoreboard_comp">
   <tr>
@@ -177,7 +175,6 @@ body {
     </tr>
     <tr class="home_teamrecord">
     </tr>
-
     </table>
     </div>
     
@@ -190,7 +187,6 @@ body {
     </table>
     </div>    
     </span>
-
 
 <!--master column -->
     <td>
@@ -219,8 +215,10 @@ body {
     </tr>
     </table>
     </div>
-   <br><br>
-	<div class="winninglosing_Pitchers">
+    
+    <br><br>
+	
+    <div class="winninglosing_Pitchers">
     <table width=290px>
     <tr>
     <td width="139">
@@ -234,7 +232,6 @@ body {
     <td><img src="image/athlete_stock.png" width="30" height="39" alt="athleteimg"></td>
     <td><img src="image/athlete_stock.png" width="30" height="39" alt="athleteimg">
     </td>
-    
     <tr>
     <td class="winningPitcher">
     </td>
@@ -243,12 +240,10 @@ body {
     </tr>
     </table>    
     </div>
-    
     </span>
     
 <!--master column-->
     <td>
-    
 
     <span class="away_team">
     <div>
@@ -271,7 +266,6 @@ body {
     </tr>
     <tr class="away_teamrecord">
     </tr>
-    
     </table>
     </div>
     
@@ -284,7 +278,6 @@ body {
     </table>
     </div>    
     </span>
-    
     
 <!--master table-->
     </td>
@@ -350,7 +343,7 @@ $(".baseRunnersText").append(data.sports[0].leagues[0].events[1].competitions[0]
 $(".currentBatter").append("Current Batter: "+data.sports[0].leagues[0].events[1].competitions[0].situation.currentBatter.shortName);
 
 });
-    </script>
+</script>
 
 </body>
 
