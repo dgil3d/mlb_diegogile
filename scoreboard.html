@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+<title>JSON Sample</title>
+
+<style type="text/css">
+
+.scoreboard_comp tr .home_team {
+	width: 300px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+.scoreboard_comp tr .away_team {
+	width: 300px;
+	text-align: left;
+	font-weight:bold;
+	font-size: 18px;
+}
+.scoreboard_comp tr .game_stats {
+	width: 290px;
+	font-size: 12px;
+	text-align: center;
+	background-position: center;
+	padding: 25px;
+	font-weight: bold;	
+}
+.scoreboard_comp {
+	background-color: #d0d0d0;
+	height: 300px;
+	color: #000;
+	width: 900px;
+	border-style: ridge;
+	border-collapse: collapse;
+	border-color: #FFF;
+	font-family: Candara, Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+.scoreboard_inprogress {
+	background-color: #a0a0a0;
+	height: 50px;
+	color: #000;
+	width: 290px;
+	border-color: #FFF;
+	border-collapse: collapse;
+	font-family: Candara, Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+
+.scoreboard_comp tr .away_team {
+	text-align: center;
+}
+.scoreboard_comp tr .away_team div .teamscore2 {
+	width: 40px;
+	text-align: center;
+	text-shadow: #000;
+	font-size: 40px;
+	padding: 20px;
+}
+.scoreboard_comp tr .home_team div .teamscore {
+	text-align: center;
+	text-shadow: #000;
+	font-size: 40px;
+	padding: 20px;
+}
+body {
+	background-color: #FFF;
+}
+.scoreboard_comp tr .game_stats div .status {
+	font-weight: bolder;
+	font-size:16px;
+}
+.scoreboard_comp tr .home_team div .team1Homeaway {
+	padding: 0px;
+	text-align: left;
+	font-weight: normal;
+}
+.scoreboard_comp tr .game_stats div .starting_pitchers {
+	font-size:10px;
+	width: 300px;
+	bottom: 0px;
+}
+.scoreboard_comp tr .game_stats div .winninglosing_Pitchers {
+	font-weight: bold;
+	font-size:10px;
+	width: 300px;
+	bottom: 0px;
+}
+.scoreboard_comp tr span .game_stats div table tr .winningPitcher {
+	text-align: center;
+	width: 290px;
+}
+
+.scoreboard_comp tr .game_stats div table tr .startingPitcher_home {
+	font-size: 14px;
+	text-align: left;
+}
+.scoreboard_comp tr .game_stats div table tr .startingPitcher_away {
+	font-size: 14px;
+	text-align: right;
+}
+.scoreboard_comp tr .game_stats div .date {
+
+}
+.scoreboard_comp tr .game_stats div .winningPitcher {
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+}
+.scoreboard_comp tr .game_stats div .losingPitcher {
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.winninglosing_Pitchers {
+}
+.scoreboard_comp tr td .game_stats .starting_pitchers table tr .startingPitcher_home {
+	font-weight: normal;
+	font-size: 16px;
+	padding: 10px;
+}
+.scoreboard_inprogress {
+	text-align: center;
+}
+.scoreboard_comp tr td .game_stats .starting_pitchers table tr .startingPitcher_away {
+	font-weight: normal;
+	font-size: 16px;
+	padding: 10px;
+}
+.scoreboard_comp tr td .away_team div table .team2Homeaway {
+	text-align: right;
+	font-weight: normal;
+}
+</style>
+<div>
+<table width="900px" align="center">
+<h2 class="league"></h2>Scoreboard HTML5 Component<br>Diego M. Gile<br>diegogile@gmail.com
+
+<p class="League"></p>
+</table>
+</div>
+
+</head>
+<body>
+
+
+<table border="1" align="center" class="scoreboard_comp">
+  <tr>
+    <td>
+
+	<span class="home_team">
+    <div>
+    <table width="300px">
+    <tr>
+    <td class="teamscore">
+    </td>
+    <td width="200px">
+    <img src="nationals.png" width="200" height="200" alt="miami">
+    </td>
+    </tr>
+    </table>
+    </div>
+    
+    <br>
+    
+    <div>
+    <table width="300px">
+    <tr class="teamname">
+    </tr>
+    <tr class="home_teamrecord">
+    </tr>
+
+    </table>
+    </div>
+    
+    <br>
+    
+    <div>
+    <table width="300px">
+    <tr class="team1Homeaway">
+    </tr>
+    </table>
+    </div>    
+    </span>
+
+
+<!--master column -->
+    <td>
+    
+    <span class="game_stats">
+    <div>
+    <table width=290px>
+    <tr>
+    <img src="espnlogo.png" width="48" height="35" alt="espnlogo">
+    </tr>
+    <tr>
+    <p class="status"> </p>
+	</tr>
+	</table>
+    </div>
+    
+	<div class="starting_pitchers">
+    <table width=290px>
+    <tr>
+    <td class="startingPitcher_home">
+    </td>
+    <td width="35px" align="center">Starting Pitchers
+    </td>
+    <td class="startingPitcher_away">
+    </td>
+    </tr>
+    </table>
+    </div>
+   <br><br>
+	<div class="winninglosing_Pitchers">
+    <table width=290px>
+    <tr>
+    <td width="139">
+    Winning Pitcher<br>
+    </td>
+    <td width="139">
+    Losing Pitcher<br>
+    </td>
+    </tr>
+    <tr>
+    <td><img src="athlete_stock.png" width="30" height="39" alt="athleteimg"></td>
+    <td><img src="athlete_stock.png" width="30" height="39" alt="athleteimg">
+    </td>
+    
+    <tr>
+    <td class="winningPitcher">
+    </td>
+    <td class="losingPitcher">
+    </td>
+    </tr>
+    </table>    
+    </div>
+    
+    </span>
+    
+<!--master column-->
+    <td>
+    
+
+    <span class="away_team">
+    <div>
+    <table width="300px">
+    <tr>
+    <td width="200px">
+    <img src="marlins.png" width="200" height="200" alt="miami">
+    </td>
+    <td class="teamscore2">
+    </td>
+    </tr>
+    </table>
+    </div>
+    
+    <br>
+    
+    <div>
+    <table width="300px">
+    <tr class="teamname2">
+    </tr>
+    <tr class="away_teamrecord">
+    </tr>
+    
+    </table>
+    </div>
+    
+    <br>
+    
+    <div>
+    <table width="300px">
+    <tr class="team2Homeaway">
+    </tr>
+    </table>
+    </div>    
+    </span>
+    
+    
+<!--master table-->
+    </td>
+  </tr>
+</table>
+
+	
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<script>
+$.getJSON("https://raw.githubusercontent.com/dgil3d/mlb_diegogile/master/mlb.json",  function(data) {
+
+//league
+$(".League").append(data.sports[0].leagues[0].name);  
+
+//Inning
+$(".inning").append(data.sports[0].leagues[0].events[0].competitions[0].period);
+
+//status
+$(".status").append(data.sports[0].leagues[0].events[0].competitions[0].status.detail);
+
+//date
+$(".date").append(data.sports[0].leagues[0].events[0].competitions[0].date);
+
+//pitchers
+$(".startingPitcher_home").append(data.sports[0].leagues[0].events[0].competitions[0].stats.homeStartingPitcher.athlete.firstName+" "+data.sports[0].leagues[0].events[0].competitions[0].stats.homeStartingPitcher.athlete.lastName);
+
+$(".startingPitcher_away").append(data.sports[0].leagues[0].events[0].competitions[0].stats.awayStartingPitcher.athlete.firstName+" "+data.sports[0].leagues[0].events[0].competitions[0].stats.awayStartingPitcher.athlete.lastName);
+
+$(".winningPitcher").append(data.sports[0].leagues[0].events[0].competitions[0].stats.winningPitcher.athlete.firstName+" "+data.sports[0].leagues[0].events[0].competitions[0].stats.winningPitcher.athlete.lastName);
+
+$(".losingPitcher").append(data.sports[0].leagues[0].events[0].competitions[0].stats.losingPitcher.athlete.firstName+" "+data.sports[0].leagues[0].events[0].competitions[0].stats.losingPitcher.athlete.lastName);
+
+//recap
+$(".recap").append(data.sports[0].leagues[0].events[0].links.web.recap.href);
+
+//home/away team
+$(".team1Homeaway").append(data.sports[0].leagues[0].events[0].competitions[0].competitors[0].homeAway);
+$(".team2Homeaway").append(data.sports[0].leagues[0].events[0].competitions[0].competitors[1].homeAway);
+
+//teamnames
+$(".teamname").append(data.sports[0].leagues[0].events[0].competitions[0].competitors[0].team.location +" "+data.sports[0].leagues[0].events[0].competitions[0].competitors[0].team.name);
+$(".teamname2").append(data.sports[0].leagues[0].events[0].competitions[0].competitors[1].team.location +" "+data.sports[0].leagues[0].events[0].competitions[0].competitors[1].team.name);
+
+
+//teamscores
+$(".teamscore").append(data.sports[0].leagues[0].events[0].competitions[0].competitors[0].score);
+$(".teamscore2").append(data.sports[0].leagues[0].events[0].competitions[0].competitors[1].score
+);
+
+//teamrecord
+$(".home_teamrecord").append(data.sports[0].leagues[0].events[0].competitions[0].competitors[0].team.record.summary);
+$(".away_teamrecord").append(data.sports[0].leagues[0].events[0].competitions[0].competitors[1].team.record.summary);
+
+$(".balls").append(data.sports[0].leagues[0].events[1].competitions[0].situation.balls);
+
+$(".strikes").append(data.sports[0].leagues[0].events[1].competitions[0].situation.strikes);
+
+$(".outs").append(data.sports[0].leagues[0].events[1].competitions[0].situation.outs);
+
+$(".baseRunnersText").append(data.sports[0].leagues[0].events[1].competitions[0].situation.baseRunnersText);
+
+$(".currentBatter").append("Current Batter: "+data.sports[0].leagues[0].events[1].competitions[0].situation.currentBatter.shortName);
+
+});
+    </script>
+
+</body>
+
+</html>	
